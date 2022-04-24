@@ -1,10 +1,16 @@
 <?php
 
-namespace Futbol;
+namespace PCFutbol;
 
-require_once 'Role.class.php';
-require_once 'Player.class.php';
-require_once 'Club.class.php';
+require_once 'Models/Role.class.php';
+require_once 'Models/Player.class.php';
+require_once 'Models/Club.class.php';
+require_once 'Models/Stadium.class.php';
+
+use PCFutbol\Models\Role;
+use PCFutbol\Models\Player;
+use PCFutbol\Models\Club;
+use PCFutbol\Models\Stadium;
 
 $portero = new Role(1, 'portero', 'PO');
 $defensa = new Role(2, 'defensa', 'DF');

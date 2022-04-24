@@ -1,8 +1,8 @@
 <?php
 
-namespace Futbol;
+namespace PCFutbol\Models;
 
-require_once 'Role.class.php';
+use PCFutbol\Models\Role;
 
 class Player
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Futbol;
+namespace PCFutbol\Models;
 
 class Stadium
 {

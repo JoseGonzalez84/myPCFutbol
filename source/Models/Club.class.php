@@ -1,9 +1,9 @@
 <?php
 
-namespace Futbol;
+namespace PCFutbol\Models;
 
-require_once 'Player.class.php';
-require_once 'Stadium.class.php';
+use PCFutbol\Models\Player;
+use PCFutbol\Models\Stadium;
 
 class Club
 {
@@ -87,5 +87,10 @@ class Club
     public function getPlayer(string $name) : ?Player
     {
         return $this->players[$name];
+    }
+
+    public function getStadium() : Stadium
+    {
+        return $this->stadium;
     }
 }

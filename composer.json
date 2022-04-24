@@ -1,0 +1,25 @@
+{
+    "name": "josegs84/mypcfutbol",
+    "description": "Mi proyecto de PCFutbol con OOP y otras tecnologías",
+    "license": "open source",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "PCFutbol\\": "source/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PCFutbol\\Tests\\": "Tests/"
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "phpunit/phpunit": "~9.0"
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
