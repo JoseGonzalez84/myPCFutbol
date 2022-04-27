@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace PCFutbol\Models;
 
@@ -6,27 +6,14 @@ use PCFutbol\Models\Role;
 
 class Player
 {
-    private string $name;
-    private Role $role;
-    private int $age;
-    private int $skill;
-    private string $nationality;
-    private bool $injured;
-    
     public function __construct(
-        ?string $name = null,
-        ?Role $role = null,
-        ?int $age = null,
-        ?int $skill = null,
-        ?string $nationality = null,
-        ?bool $injured = null
+        private string $name,
+        private Role $role,
+        private int $age,
+        private int $skill,
+        private string $nationality = '',
+        private bool $injured = false
     ) {
-        $this->setName($name);
-        $this->setRole($role);
-        $this->setAge($age);
-        $this->setSkill($skill);
-        $this->setNationality($nationality);
-        $this->injured = $injured ?? false;
     }
 
     public function getName() : string

@@ -46,7 +46,7 @@ class Match
 
     private function setAssistance() : int
     {
-        $stadium
-
+        $stadiumMaxAssistance = $this->stadium->getSpectators();
+        $v
     }
 }

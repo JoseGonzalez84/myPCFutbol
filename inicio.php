@@ -1,11 +1,6 @@
 <?php
 
-namespace PCFutbol;
-
-require_once 'Models/Role.class.php';
-require_once 'Models/Player.class.php';
-require_once 'Models/Club.class.php';
-require_once 'Models/Stadium.class.php';
+require 'vendor/autoload.php';
 
 use PCFutbol\Models\Role;
 use PCFutbol\Models\Player;
